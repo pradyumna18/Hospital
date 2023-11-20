@@ -1,0 +1,137 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #cbcbcb;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+
+    background-color: #807d7d;
+    border-radius: 0.5rem;
+    box-shadow:10px 10px 10px 10px #2b2727;
+    overflow: hidden;
+    margin: 1rem 0rem;
+}
+
+
+.container .title {
+    padding: 25px 25px;
+    position: relative;
+}
+
+.container .title hr {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #f1f1f1;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 91%;
+    height: 10px;
+}
+.container .title p {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+}
+
+.user_details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 25px;
+}
+
+.user_details .input_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.user_details .input_box label {
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    padding: 0rem 0.5rem;
+    color:#ffffff;
+
+}
+
+.user_details .input_box label::after {
+    content: ' * ';
+    color: red;
+}
+
+.user_details .input_box input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0rem 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    transition: all 12ms ease-out;
+}
+.user_details .input_box select {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0rem 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    transition: all 12ms ease-out;
+}
+input.LG{
+    padding:12px 30px;
+    width:25%;
+    margin-bottom:10px;
+    margin-left:40px;
+    align-items: center;
+    background-color: #1f0303;
+    color:#ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  input.BTN{
+    display: inline-block;
+    padding:12px 30px;
+    width:25%;
+    align-items: center;
+    background-color: #1f0303;
+    color:#ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+  input.BTN:hover{
+    cursor: pointer;
+    background-color: #e11818;
+  }
+  .LG:hover{
+    cursor: pointer;
+    background-color: #2ad33b;
+  }

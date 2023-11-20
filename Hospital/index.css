@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2e2e2;
+}
+
+.button {
+  margin: 15px 10px;
+  position: relative;
+  padding:10px 20px;
+  font-family: "proxima-nova", sans-serif;
+  /* border: none; */
+  border: 2px solid purple;
+  background: transparent;
+  cursor: pointer;
+  width: auto;
+  border-radius: 20px;
+  background: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  /* background-color:rgb(52, 23, 52); */
+  text-decoration: none;
+  transition: all 1s;
+  overflow: hidden;
+}
+.button a{
+  text-decoration: none;
+
+  color: white;
+}
+.button a:hover {
+ 
+  color: rgb(255, 255, 255);
+}
+.button:hover {
+  color: white;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: purple;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.button:hover::before {
+  width: 160%;
+}
+
+.search input{
+  align-items: center;
+  margin-left: 20%;
+  width: 50%;
+  padding:0 40px;
+  height:40px;
+  border: none;
+  border-radius: 15px;
+  background-color: #dbd8d8;
+  outline: none;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(64, 191, 191);
+  border-bottom:2px solid black ;
+  z-index: 999;
+}
+
+nav ul {
+  float: right;
+  margin-right: 50px;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
+  color: rgb(46, 41, 41);
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(64, 191, 191);
+  color: white;
+  height: 640px;
+} 
+.mainText h1{
+  font-size: 55px;
+}
+.mainText h3{
+  font-size: 35px;
+  margin-top: 20px;
+}
+.head {
+  text-align: center;
+  padding: 80px;
+  text-decoration: underline;
+  align-items: center;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-size: 25px;
+}
+
+
+.teams{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.teams .card{
+  width: 410px;
+  height: 430px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-inline: 20px;
+  margin-top: 22px;
+}
+.card img{
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card p{
+  margin-top: 11px;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  margin-left: 11px;
+  font-size: 20 px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+ .service {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap:30px;
+}
+
+.S-Card {
+  width: 350px;
+  padding: 2rem;
+  text-align: center;
+  /* margin-inline: 20px; */
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 2px rgb(111, 113, 113);
+  border-radius: 15px;
+}
+
+.S-Card img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.S-Card p {
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+  font-family: "Sofia", sans-serif;
+} 
+
+hr {
+  margin-top: 25px;
+  margin-left: 75px;
+  width: 90%;
+  border: 1px solid rgb(255, 0, 251);
+}
+
+
+
+
+/* .reviews {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.PReviews {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-inline:1px;
+  
+}
+.PReviews img {
+  width: 300px;
+  border-radius: 10px;
+} */
+
+
+
+.contact{
+  width: 300px;
+  background-color: #fff;
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+.contact:hover{
+  box-shadow: 10px 10px 5px 12px lightblue;
+}
+.contact h1{
+  color: rgb(9, 77, 77);
+}
+.contact input{
+  width: 90%;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #e2e2e2;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+.subBtn{
+  width: 150px;
+  height: 35px;
+  margin-top: 20px;
+  padding-bottom: 35px;
+  background-color: rgb(12, 95, 95);
+  color: white;
+  font-size: 17px;
+  border: none;
+}
+
+
+footer{
+  width:88.9rem;
+  padding:3rem;
+  background-color:blueviolet ;
+}
+.allItems{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  width:25%;
+  padding:7px;
+  margin:0 20px;
+  line-height: 1.8;
+}
+.text h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1f0303;
+  text-decoration: underline;
+}
+.text p{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal{
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width:px;
+  height:500px;
+  margin-top:50px;
+}
+form{
+  display: flex;
+  flex-direction:column ;
+  width:30%;
+  align-items: center;
+  background-color: #f4f4f4;
+  position: fixed;
+  top:150px;
+  left:36%;
+}
+form h2{
+  font-size: 3rem;
+  text-align: center;
+  margin:40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.desh1{
+  padding:15px;
+  width:80%;
+  border: 1px solid black;
+  outline: none;
+  margin:10px 35px;
+  border-radius: 20px;
+  border: 1px solid #211010;
+  box-sizing: border-box;
+}
+input.LG{
+  padding:12px 30px;
+  width:38%;
+  margin-top:30px;
+  margin-left:40px;
+  align-items: center;
+  background-color: #1f0303;
+  color:#ffffff;
+  font-weight: bold;
+  border: none;
+}
+input.BTN{
+  display: inline-block;
+  padding:12px 30px;
+  width:38%;
+  align-items: center;
+  background-color: #1f0303;
+  color:#ffffff;
+  font-weight: bold;
+  border: none;
+}
+input.BTN:hover{
+  cursor: pointer;
+  background-color: #e11818;
+}
+.LG:hover{
+  cursor: pointer;
+  background-color: #2ad33b;
+}
+form a{
+  text-decoration: none;
+  color:#1f0303;
+  margin-top: 20px;
+  margin-left:100px;
+}
+form a:hover{
+  color:#4432d0;
+}
+.container {
+  padding: 16px;
+  border-radius: 15px;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.5s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

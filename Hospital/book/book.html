@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="myForm">
+        <div class="title">
+            <h2>Appoitment Form</h2>
+        </div>
+        <form id="myForm" action="" method="get">
+            <div class="user_details">
+                <div class="input_box">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter Full Name" >
+                </div>
+                <div class="input_box">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter Last Name" >
+                </div>
+                <div class="input_box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" >
+                </div>
+                <div class="input_box">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Enter Mobile" >
+                </div>
+                <div class="input_box">
+                    <label for="treatment">Treatment Name</label>
+                    <input type="text" name="treatment" id="treatment" placeholder="Enter Treatment Name" >
+                </div>
+                <div class="input_box">
+                    <label for="page">Patient</label>
+                    <input type="number" name="page" id="page" placeholder="Enter Patient Age" >
+                </div>
+                <div class="input_box">
+                    <label for="date">Appoiment Date</label>
+                    <input type="date" name="date" id="date" placeholder="Enter Appoitment Date" >
+                </div>
+                <div class="input_box">
+                    <label for="time">Appoiment Time</label>
+                    <input type="time" name="time" id="time" placeholder="Enter Appoitment Time" >
+                </div>
+                <div class="input_box">
+                    <label for="blood">Blood Group</label>
+                    <select id="blood" >
+                        <option>Select Blood Group</option>
+                        <option>A</option>
+                        <option>A+</option>
+                        <option>B</option>
+                        <option>B+</option>
+                        <option>O</option>
+                        <option>O+</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </div>
+                <div class="input_box">
+                    <label for="gender">Gender</label>
+                    <select id="gender" >
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" class="LG" onclick="save()" value="Book" id="myForm">
+            <input type="button" class="BTN" id="btn" value="Back">
+        </form>
+    </div>
+    <script src="book.js"></script>
+</body>
+</html>

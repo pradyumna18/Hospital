@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="doctor.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topbar">
+        <div class="toggle">
+          <h1>DOCTOR</h1>
+        </div>
+        <div class="search">
+            <h3>S_E_V_E_N Star</h3>
+        </div>
+        <button onclick="logout()">Log Out</button>
+    </div>
+    <div class="heads">
+        <h2>Todays Work</h2>
+    </div>
+    <div class="cardbox">
+        <div class="card">
+            <div>
+                <div class="number">5</div>
+                <div class="cardname">Appoitments</div>
+            </div>
+            <div class="iconbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <div class="number">10</div>
+                <div class="cardname">Training Students</div>
+            </div>
+            <div class="iconbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <div class="number">2</div>
+                <div class="cardname">My Patients Operations</div>
+            </div>
+            <div class="iconbox">
+                <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <h2>Appoitments</h2>
+    </div>
+    <table id="myForm">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Patient Age</th>
+                <th>Treatment</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Gender</th>
+                <th>Blood</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="firstName"></td>
+                    <td id="lastName"></td>
+                    <td id="emailName"></td>
+                    <td id="mobileName"></td>
+                    <td id="pageName"></td>
+                    <td id="treatmentName"></td>
+                    <td id="dateName"></td>
+                    <td id="timeName"></td>
+                    <td id="bloodName"></td>
+                    <td id="genderName"></td>
+                </tr>
+                <tr>
+                    <td id="firstName">Taddy</td>
+                    <td id="lastName">Deshpande</td>
+                    <td id="emailName">taddy123@gmail.com</td>
+                    <td id="mobileName">8669496264</td>
+                    <td id="pageName">26</td>
+                    <td id="treatmentName">Knee</td>
+                    <td id="dateName">2023-11-13</td>
+                    <td id="timeName">3:30</td>
+                    <td id="bloodName">B+</td>
+                    <td id="genderName">Male</td>
+                </tr>
+                <tr>
+                    <td id="firstName">Deepak</td>
+                    <td id="lastName">Deshpande</td>
+                    <td id="emailName">deepak123@gmail.com</td>
+                    <td id="mobileName">7776989185</td>
+                    <td id="pageName">52</td>
+                    <td id="treatmentName">Body PAin</td>
+                    <td id="dateName">2023-11-23</td>
+                    <td id="timeName">3:00</td>
+                    <td id="bloodName">A+</td>
+                    <td id="genderName">Male</td>
+                </tr>
+                <tr>
+                    <td id="firstName">Teju</td>
+                    <td id="lastName">Deshpande</td>
+                    <td id="emailName">teju123@gmail.com</td>
+                    <td id="mobileName">9146761494</td>
+                    <td id="pageName">28</td>
+                    <td id="treatmentName">Food poisoning</td>
+                    <td id="dateName">2023-11-3</td>
+                    <td id="timeName">2:30</td>
+                    <td id="bloodName">B+</td>
+                    <td id="genderName">Female</td>
+                </tr>
+                <tr>
+                    <td id="firstName">Dipti</td>
+                    <td id="lastName">Deshpande</td>
+                    <td id="emailName">dipti123@gmail.com</td>
+                    <td id="mobileName">8381032658</td>
+                    <td id="pageName">32</td>
+                    <td id="treatmentName">Cramp</td>
+                    <td id="dateName">2023-11-25</td>
+                    <td id="timeName">12:30</td>
+                    <td id="bloodName">AB+</td>
+                    <td id="genderName">Female</td>
+                </tr>
+            <tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Patient Appoitments</h2>
+<div class="table-wrapper">
+    <table class="fl-table" id="myForm">
+        <thead>
+       <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Patient Age</th>
+                <th>Treatment</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Gender</th>
+                <th>Blood</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td id="firstName"></td>
+            <td id="lastName"></td>
+            <td id="emailName"></td>
+            <td id="mobileName"></td>
+            <td id="pageName"></td>
+            <td id="treatmentName"></td>
+            <td id="dateName"></td>
+            <td id="timeName"></td>
+            <td id="bloodName"></td>
+            <td id="genderName"></td>
+        </tr>
+        <tbody>
+    </table>
+</div> -->
+    <script src="doctor.js"></script>
+</body>
+</html>

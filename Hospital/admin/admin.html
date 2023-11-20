@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="logout()">LOGOUT</a></li>
+            </ul>
+            <h2>ADMIN</h2>
+            <h1>S_E_V_E_N &nbsp; STAR</h1>
+        </nav>
+    <div class="main">
+        <div class="cardbox">
+            <div class="card">
+                <div>
+                    <div class="number">53</div>
+                    <div class="cardname">Appoitments</div>
+                </div>
+                <div class="iconbox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">13</div>
+                    <div class="cardname">Doctors</div>
+                </div>
+                <div class="iconbox">
+                    <i class="fa fa-user-md" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">25</div>
+                    <div class="cardname">Students</div>
+                </div>
+                <div class="iconbox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">5</div>
+                    <div class="cardname">Operations</div>
+                </div>
+                <div class="iconbox">
+                    <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="recentbook">
+                <div class="cardHeader">
+                    <h2 class="name">Recent Appoitments</h2>
+                </div>
+                <table id="myForm" class="table">
+                    <thead>
+                        <tr class="tr">
+                            <th class="th">First Name</th>
+                            <th class="th">Last Name</th>
+                            <th class="th">Email</th>
+                            <th class="th">Mobile</th>
+                            <th class="th">Patient Age</th>
+                            <th class="th">Treatment</th>
+                            <th class="th">Date</th>
+                            <th class="th">Time</th>
+                            <th class="th">Gender</th>
+                            <th class="th">Blood</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr">
+                            <td id="firstName" class="td"></td>
+                            <td id="lastName" class="td"></td>
+                            <td id="emailName" class="td"></td>
+                            <td id="mobileName" class="td"></td>
+                            <td id="pageName" class="td"></td>
+                            <td id="treatmentName" class="td"></td>
+                            <td id="dateName" class="td"></td>
+                            <td id="timeName" class="td"></td>
+                            <td id="bloodName" class="td"></td>
+                            <td id="genderName" class="td"></td>
+                        </tr>
+                    <tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
